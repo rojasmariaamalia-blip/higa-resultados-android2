@@ -1,0 +1,7 @@
+**/.gradle/
+**/.kotlin/
+**/build/
+**/local.properties
+**/*.swp
+**/*.bak
+higa-resultados-android.zip
