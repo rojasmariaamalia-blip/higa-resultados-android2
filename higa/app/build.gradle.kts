@@ -17,4 +17,5 @@ kotlin {
 
 dependencies {
     implementation("androidx.activity:activity-ktx:1.10.1")
+    implementation("com.tom-roush:pdfbox-android:2.0.27.0")
 }

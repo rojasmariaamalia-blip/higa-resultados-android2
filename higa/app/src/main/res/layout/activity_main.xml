@@ -99,12 +99,56 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <TableLayout
-                android:id="@+id/pdfTable"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:stretchColumns="*" />
+                android:orientation="vertical">
 
+                <TableLayout
+                    android:id="@+id/pdfTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Textos extraídos"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:padding="12dp" />
+
+                <TableLayout
+                    android:id="@+id/resultsTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Resultados de análisis"
+    android:textStyle="bold"
+    android:textSize="18sp"
+    android:padding="12dp" />
+
+<Button
+    android:id="@+id/downloadResultsButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Descargar resultados CSV" />
+
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableLayout
+        android:id="@+id/determinationsTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*" />
+
+</HorizontalScrollView>
+            </LinearLayout>
         </ScrollView>
     </LinearLayout>
 
